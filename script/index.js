@@ -11,3 +11,18 @@ button.addEventListener("mouseover", function(){
         event.preventDefault()})
      })
      
+ // Akan names
+ const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+ const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+ // Assign Akan name
+ let akanName = "";
+ if (gender === 'male') {
+     akanName = maleNames[dayOfWeekFinal];
+ } else {
+     akanName = femaleNames[dayOfWeekFinal];
+ }
+
+ // Display result
+ document.getElementById('akanName').textContent = akanName;
+ document.getElementById('result').style.display = 'block';
