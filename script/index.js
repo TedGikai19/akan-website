@@ -8,7 +8,6 @@ button.addEventListener("mouseover", function(){
     })
     button.addEventListener("Submit",function(event){
         alert("Submit")
-        event.preventDefault()
-
-    })
+        event.preventDefault()})
      })
+     
